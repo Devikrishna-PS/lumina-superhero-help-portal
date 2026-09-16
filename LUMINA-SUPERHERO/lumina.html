@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Lumina | Guardian of Hope</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(180deg,#020817,#071B3C,#0B2552);
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:"";
+position:fixed;
+inset:0;
+background-image:radial-gradient(#FFD166 1px,transparent 1px);
+background-size:60px 60px;
+opacity:.15;
+animation:starsMove 30s linear infinite;
+z-index:-2;
+}
+
+@keyframes starsMove{
+from{background-position:0 0;}
+to{background-position:0 800px;}
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(12px);
+border-bottom:1px solid rgba(255,255,255,.08);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+.logo{
+font-size:28px;
+font-weight:800;
+color:#FFD166;
+text-shadow:0 0 15px #FFD166;
+}
+
+.back-btn{
+background:#FFD166;
+color:#071B3C;
+padding:10px 22px;
+border-radius:30px;
+font-weight:700;
+text-decoration:none;
+}
+
+.hero{
+display:flex;
+justify-content:center;
+align-items:center;
+flex-wrap:wrap;
+padding:60px 8%;
+gap:40px;
+}
+
+.hero img{
+width:340px;
+max-width:100%;
+filter:drop-shadow(0 0 40px rgba(255,215,100,.8));
+animation:floatHero 5s ease-in-out infinite;
+}
+
+@keyframes floatHero{
+0%,100%{transform:translateY(0);}
+50%{transform:translateY(-15px);}
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero-text h1{
+font-size:55px;
+color:#FFD166;
+margin-bottom:15px;
+}
+
+.hero-text h3{
+font-weight:400;
+color:#BBD5FF;
+margin-bottom:25px;
+}
+
+.hero-text p{
+line-height:1.9;
+color:#E8F1FF;
+}
+
+.section{
+padding:70px 8%;
+}
+
+.section h2{
+text-align:center;
+font-size:40px;
+color:#FFD166;
+margin-bottom:35px;
+}
+
+.timeline{
+max-width:900px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:25px;
+}
+
+.timeline-item{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:18px;
+border-left:5px solid #FFD166;
+}
+
+.timeline-item h3{
+color:#FFD166;
+margin-bottom:8px;
+}
+
+.power-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.power-card{
+background:rgba(255,255,255,.05);
+padding:25px;
+border-radius:20px;
+transition:.3s;
+}
+
+.power-card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(255,209,102,.35);
+}
+
+.power-card h3{
+color:#FFD166;
+margin-bottom:12px;
+}
+
+.badges{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:18px;
+margin-top:25px;
+}
+
+.badge{
+padding:14px 20px;
+border-radius:30px;
+background:#102A5C;
+color:#FFD166;
+font-weight:600;
+}
+
+.quote{
+text-align:center;
+padding:80px 20px;
+background:rgba(255,255,255,.04);
+}
+
+.quote h2{
+font-size:36px;
+color:#FFD166;
+margin-bottom:20px;
+}
+
+.quote p{
+font-size:18px;
+color:#D8E6FF;
+}
+
+footer{
+padding:35px;
+text-align:center;
+color:#9EBBFF;
+}
+
+@media(max-width:768px){
+
+.hero{
+text-align:center;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+.section h2{
+font-size:30px;
+}
+
+.quote h2{
+font-size:28px;
+}
+}
+</style>
+
+</head>
+<body>
+<audio id="lumina-sound" loop preload="auto">
+  <source src="assets/lumina-theme.mp3" type="audio/mpeg">
+</audio>
+<header>
+<div class="logo">✨ LUMINA</div>
+
+<a href="index.html" class="back-btn" onclick="sessionStorage.setItem('skipLoader','true')">
+  ⬅ Return Home
+</a>
+</header>
+
+<section class="hero">
+
+<img src="assets/lumina.png" alt="Lumina">
+
+<div class="hero-text">
+
+<h1>Lumina</h1>
+
+<h3>Guardian of Hope • Protector of Voices • Beacon of Light</h3>
+
+<p>
+Lumina was born from millions of tiny lights that appeared every time someone chose hope over fear.
+She travels through cities, dreams and digital worlds, protecting people who need guidance, courage,
+cyber safety and emotional support.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>✨ Origin Story</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+<h3>🌟 Birth of Hope</h3>
+<p>When people believed kindness could still change the world, their hope became light. Those lights created Lumina.</p>
+</div>
+
+<div class="timeline-item">
+<h3>🌍 The First Mission</h3>
+<p>Lumina answered the first voice that felt completely alone and reminded them they were never forgotten.</p>
+</div>
+
+<div class="timeline-item">
+<h3>🛡 Guardian of Voices</h3>
+<p>She now protects people from fear, loneliness, cyber threats and hopelessness through compassion and courage.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>⚡ Super Powers</h2>
+
+<div class="power-grid">
+
+<div class="power-card">
+<h3>⭐ Star Beacon</h3>
+<p>Finds anyone asking for help anywhere in the world.</p>
+</div>
+
+<div class="power-card">
+<h3>🛡 Light Shield</h3>
+<p>Creates a shield of courage against fear and darkness.</p>
+</div>
+
+<div class="power-card">
+<h3>💙 Hope Pulse</h3>
+<p>Strengthens hearts through compassionate conversations.</p>
+</div>
+
+<div class="power-card">
+<h3>🌐 Cyber Vision</h3>
+<p>Protects people from phishing, scams and online dangers.</p>
+</div>
+
+<div class="power-card">
+<h3>✨ Healing Light</h3>
+<p>Brings comfort during difficult moments and inspires confidence.</p>
+</div>
+
+<div class="power-card">
+<h3>🌌 Aurora Wings</h3>
+<p>Travels instantly wherever someone needs hope.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>💙 Lumina's Mission</h2>
+
+<div class="badges">
+
+<div class="badge">🌍 Protect Everyone</div>
+
+<div class="badge">💬 Listen First</div>
+
+<div class="badge">🛡 Keep People Safe</div>
+
+<div class="badge">⭐ Spread Hope</div>
+
+<div class="badge">💙 Never Ignore A Voice</div>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<h2>"Hope shines brightest in the darkest moments."</h2>
+
+<p>— Lumina, Guardian of Hope</p>
+
+</section>
+
+<footer>
+
+✨ 2026 Lumina Universe | Created by Devikrishna P S
+
+</footer>
+
+</body>
+</html>

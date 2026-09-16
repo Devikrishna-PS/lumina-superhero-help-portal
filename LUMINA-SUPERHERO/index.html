@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>LUMINA | Superhero Help Portal</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("nuxWjLGVf01baJyNI");
+</script>
+</head>
+
+<body>
+
+  <audio id="lumina-sound" loop preload="auto">
+  <source src="assets/lumina-theme.mp3" type="audio/mpeg">
+</audio>
+
+    <div class="cursor-glow"></div>
+<div id="success-popup">
+    <div class="popup-card">
+        <h2>🛡 Mission Accepted</h2>
+        <p>
+            Lumina has received your request.
+            Hope is on the way.
+        </p>
+
+        <button id="popup-btn">Continue</button>
+    </div>
+</div>
+
+    <!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-circle"></div>
+
+  <h1>LUMINA</h1>
+
+  <p>Guardian is arriving...</p>
+
+  <button id="enter-portal">✨ Enter Portal</button>
+</div>
+  <!-- Sparkles -->
+  <div class="sparkles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+<div class="shooting-stars">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  <!-- Background -->
+  <div class="stars"></div>
+  <div class="glow glow1"></div>
+  <div class="glow glow2"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">
+      ✨ <span class="typing-logo">LUMINA</span>
+    </div>
+
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#powers">Powers</a></li>
+      <li><a href="#help">Help</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+<section class="hero">
+
+  <!-- Floating Light Particles -->
+  <div class="particles">
+    <span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="hero-text">
+
+    <p class="tag">✨ GUARDIAN OF HOPE</p>
+
+    <h1 class="hero-title">
+      Every voice deserves
+      <span>to be heard.</span>
+    </h1>
+
+    <p id="typewriter" class="description"></p>
+
+    <div class="hero-buttons">
+
+  <a href="mission.html">
+  <button class="hero-btn">
+    ⭐ Start Rescue Mission
+  </button>
+</a>
+
+  <a href="lumina.html">
+  <button class="hero-btn outline-btn">
+    💙 Meet Lumina
+  </button>
+</a>
+</div>
+
+  </div>
+
+  <div class="hero-image">
+
+    <div class="light-ring"></div>
+    <div class="hero-halo"></div>
+
+    <img src="assets/lumina.png" alt="Lumina Superhero">
+
+  </div>
+
+</section>
+  <!-- About -->
+  <section id="about" class="section">
+
+    <h2>Who is Lumina?</h2>
+
+    <p>
+      Lumina was created from millions of lights born whenever someone chose hope over fear.
+      She appears wherever someone needs courage, guidance, protection, or simply someone who listens.
+    </p>
+
+  </section>
+
+  <!-- Powers -->
+  <section id="powers" class="powers">
+
+    <div class="power-card">
+      <h3>⭐ Star Beacon</h3>
+      <p>Detects anyone asking for help anywhere in the world.</p>
+    </div>
+
+    <div class="power-card">
+      <h3>🛡 Light Shield</h3>
+      <p>Protects people from fear, danger, and darkness.</p>
+    </div>
+
+    <div class="power-card">
+      <h3>💙 Hope Pulse</h3>
+      <p>Gives strength through compassionate conversations.</p>
+    </div>
+
+    <div class="power-card">
+      <h3>🌐 Cyber Vision</h3>
+      <p>Warns people about cyber threats and online scams.</p>
+    </div>
+
+  </section>
+<!-- RESCUE STATS -->
+<section class="stats">
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="500">0</h2>
+    <p>Rescue Missions</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="120">0</h2>
+    <p>Cities Protected</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="1000">0</h2>
+    <p>Hope Messages Delivered</p>
+  </div>
+
+  <div class="stat-box">
+    <h2 class="counter" data-target="24">0</h2>
+    <p>Hours Watching Over You</p>
+  </div>
+
+</section>
+
+<section class="features">
+
+  <h2>Why Choose Lumina?</h2>
+
+  <div class="feature-grid">
+
+    <div class="feature-card">
+      <h3>💙 Compassion First</h3>
+      <p>Lumina listens without judging and guides people with kindness.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>🛡 Safe & Secure</h3>
+      <p>Your rescue request is handled privately through Lumina Headquarters.</p>
+    </div>
+
+    <div class="feature-card">
+      <h3>⚡ Instant Response</h3>
+      <p>The chatbot immediately starts your rescue mission and collects your request.</p>
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- Help Section -->
+  <section id="help" class="cta">
+
+    <h2>Need My Help?</h2>
+
+    <p>Start a conversation with Lumina and share your story.</p>
+
+    <button class="hero-btn" id="open-chat-btn">
+    💬 Open Lumina Chat
+  </button>
+
+
+  </section>
+
+  <!-- FAQ SECTION -->
+<section class="faq">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Who is Lumina?
+      <span>➕</span>
+    </button>
+
+    <div class="faq-answer">
+      Lumina is the Guardian of Hope who listens, protects, and guides anyone asking for help.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      Is my information safe?
+      <span>➕</span>
+    </button>
+
+    <div class="faq-answer">
+      Yes. Your information is securely sent to Lumina Headquarters through EmailJS and is not stored publicly.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">
+      What kind of help can I ask for?
+      <span>➕</span>
+    </button>
+
+    <div class="faq-answer">
+      You can ask for emotional support, cyber safety guidance, personal advice, study help, or share any grievance that needs help.
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+
+  <h2>✨ LUMINA</h2>
+
+  <p>Guardian of Hope • Protector of Voices • Beacon of Light</p>
+
+  <div class="footer-icons">
+    <span>⭐</span>
+    <span>🛡</span>
+    <span>🌍</span>
+    <span>💙</span>
+  </div>
+
+  <p class="copyright">
+    © 2026 Lumina Superhero Help Portal | Created by Devikrishna P S
+  </p>
+
+</footer>
+<!-- ================= CHATBOT ================= -->
+
+<button id="chat-toggle">💬</button>
+
+<div id="chatbot">
+
+  <div class="chat-header">
+    ⭐ Lumina
+    <button id="close-chat">✖</button>
+  </div>
+
+  <div id="chat-body">
+    <div class="typing" id="typing" style="display:none;">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
+  <div class="chat-input">
+    <input
+      type="text"
+      id="user-input"
+      placeholder="Type your reply..."
+    >
+
+    <button id="send-btn">➤</button>
+  </div>
+
+</div>
+
+  <!-- JavaScript -->
+
+ <script src="email.js"></script>
+<script src="script.js"></script>
+
+</body>
+
+</html>
