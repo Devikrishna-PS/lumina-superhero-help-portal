@@ -88,10 +88,10 @@ const typing = document.getElementById("typing");
 
 // Questions Lumina asks
 const questions = [
-  "How old are you?",
-  "Which city are you from?",
-  "What's your email address?",
-  "Tell me... How can I help you today?"
+  "💙 Lovely to meet you! How old are you?",
+  "🌍 Thanks! Which city are you from?",
+  "📧 What's your email address? I'll only use it for follow-up resources. 🔒",
+  "✨ Thank you! Now tell me anything you need help with. I'm here to listen."
 ];
 
 let step = 0;
@@ -168,9 +168,24 @@ function sendMessage() {
 
     typing.style.display = "none";
 
-    if (step < questions.length) {
+    if (step === 0) {
+      addBotMessage(`💙 Lovely to meet you, ${answers[0]}! How old are you?`);
+      step++;
 
-      addBotMessage(questions[step]);
+    } else if (step === 1) {
+      addBotMessage(`🌍 Thanks, ${answers[0]}. Which city are you from?`);
+      step++;
+
+    } else if (step === 2) {
+      addBotMessage(
+        `📧 Great, What's your email address? I'll only use it for follow-up resources. 🔒`
+      );
+      step++;
+
+    } else if (step === 3) {
+      addBotMessage(
+        `✨ Thank you, ${answers[0]}! Now tell me anything you need help with. I'm here to listen.`
+      );
       step++;
 
     } else {
@@ -188,7 +203,6 @@ function sendMessage() {
           problem: answers[4]
         });
       }, 3000);
-
     }
 
   }, 1200);
