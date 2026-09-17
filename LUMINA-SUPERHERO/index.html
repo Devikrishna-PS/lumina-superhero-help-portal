@@ -39,14 +39,20 @@
 </div>
 
     <!-- LOADING SCREEN -->
+<!-- LOADING SCREEN -->
 <div id="loader">
-  <div class="loader-circle"></div>
 
-  <h1>LUMINA</h1>
+  <video id="intro-video" autoplay muted loop playsinline>
+    <source src="assets/lumina-intro.mp4" type="video/mp4">
+  </video>
 
-  <p>Guardian is arriving...</p>
+  <div class="loader-overlay">
+    <h1>LUMINA</h1>
+    <p>Guardian of Hope is arriving...</p>
 
-  <button id="enter-portal">✨ Enter Portal</button>
+    <button id="enter-portal">✨ Enter Portal</button>
+  </div>
+
 </div>
   <!-- Sparkles -->
   <div class="sparkles">
